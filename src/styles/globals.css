@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-hex: #aeeec861;
+  --secondary-hex: #94bbe9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +19,19 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #000000;
+  background: #aeeec830
+}
+
+.textExtraClsRoot div>input {
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.loginShadow {
+  background: rgb(174,238,200);
+  background: linear-gradient(344deg, rgba(174,238,200,1) 0%, rgba(255,255,255,1) 45%, rgba(234,255,252,1) 65%, rgba(148,187,233,1) 100%);
+  -webkit-box-shadow: 2px 3px 33px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 33px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 33px -16px rgba(0, 0, 0, 0.75);
 }
